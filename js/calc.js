@@ -91,7 +91,7 @@ function calc () {
     for (let i = 0; i < popupCalcShow.length; i++) {
       popupCalcShow[i].addEventListener('click', () => {
         popupCalc.style.display = 'flex';
-        scrollHide.style.overflow = 'hidden';
+        scrollHide.style.overflow = '';
 
         let popupCalcButton = document.querySelector('.popup_calc_button');
         popupCalcButton.addEventListener('click', function () {
@@ -114,7 +114,7 @@ function calc () {
 
     function showModalCalc(event) {
       let target = event.target;
-      scrollHide.style.overflow = 'hidden';
+      scrollHide.style.overflow = '';
       if (target.className == 'popup_calc_close' || target.className == 'closed') {
         popupCalc.style.display = 'none';
         scrollHide.style.overflow = 'scroll';
