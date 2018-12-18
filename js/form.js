@@ -20,7 +20,7 @@ let form = document.querySelector('form'),
     inputPopupFormModalCalcWidth = document.querySelectorAll('input')[16],
     inputPopupFormModalCalcHight = document.querySelectorAll('input')[17],
     inputPopupFormModalCalcEnd = document.querySelectorAll('input')[21],
-    input = document.querySelectorAll('input'),
+    inputs = document.querySelectorAll('input'),
     statusMessage = document.createElement('div');
 
 statusMessage.classList.add('status');
@@ -56,8 +56,8 @@ function allForm(form) {
         }
 
         function clearInput() {
-            for (let i = 0; i < input.length; i++) {
-                input[i].value = '';
+            for (let i = 0; i < inputs.length; i++) {
+                inputs[i].value = '';
             }
         }
         postData(formData)
